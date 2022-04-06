@@ -1,0 +1,20 @@
+{
+    "dashboardName": "Dispatch Service Performance Test Report - Dispatch - Rerun Assign Shipment Endpoint",
+	"appName":"dispatch-service",
+    "pages": [
+        {
+            "pageName": "Assign Shipment Endpoint",
+            "transactionName": "WebTransaction/MVC/Dispatch/AssignShipment/{dispatchId}/{assignShipmentModel}/{xEndCustomerId}/{eTag}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-04-05 05:34",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-04-05 04:54",
+                    "duration": 10
+                }
+            }
+        }
+    ]
+}

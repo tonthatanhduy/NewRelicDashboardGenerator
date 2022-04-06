@@ -1,0 +1,76 @@
+{
+    "dashboardName": "Dispatch Service Performance Test Report - Dispatch Documents",
+	"appName":"dispatch-service",
+    "pages": [
+        {
+            "pageName": "Get Dispatch Document",
+            "transactionName": "WebTransaction/MVC/DispatchDocument/GetDispatchDocument/{dispatchDocumentId}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 17:20",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 17:40",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Request Document Upload",
+            "transactionName": "WebTransaction/MVC/DispatchDocument/GetPresignedUrl/{request}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 08:01",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 08:47",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Get Dispatch Documents",
+            "transactionName": "WebTransaction/MVC/DispatchDocument/GetDispatchDocuments",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 16:40",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 17:00",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Delete Dispatch Document",
+            "transactionName": "WebTransaction/MVC/DispatchDocument/DeleteDispatchDocument/{dispatchDocumentId}/{xEndCustomerId}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 13:42",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 13:27",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Add Dispatch Document",
+            "transactionName": "WebTransaction/MVC/DispatchDocument/AddDispatchDocument/{dispatchDocumentModel}/{xEndCustomerId}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 12:38",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 12:52",
+                    "duration": 10
+                }
+            }
+        }
+    ]
+}

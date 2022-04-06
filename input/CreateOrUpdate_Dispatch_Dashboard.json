@@ -1,0 +1,76 @@
+{
+	"dashboardName": "Dispatch Service Performance Test Report - Dispatch - CreateOrUpdate Endpoints",
+	"appName":"dispatch-service",
+	"pages": [
+        {
+            "pageName": "Assign Shipment Endpoint",
+            "transactionName": "WebTransaction/MVC/Dispatch/AssignShipment/{dispatchId}/{assignShipmentModel}/{xEndCustomerId}/{eTag}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 10:36",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 10:17",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Create Dispatch Endpoint",
+            "transactionName": "WebTransaction/MVC/Dispatch/CreateDispatch/{dispatchModel}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 11:55",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 12:10",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Cancel Dispatch By DispatchId",
+            "transactionName": "WebTransaction/MVC/Dispatch/CancelDispatch/{cancelDispatchModel}/{etag}/{xEndCustomer}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 12:56",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 12:36",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Cancel Dispatch By LoadId",
+            "transactionName": "WebTransaction/MVC/Dispatch/CancelDispatch/{cancelDispatchModel}/{etag}/{xEndCustomer}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 14:25",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 14:06",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Update Dispatch Vehicle Dates",
+            "transactionName": "WebTransaction/MVC/Dispatch/UpdateDispatchVehicleDates/{dispatchId}/{updateDispatchVehicleDatesModel}/{eTag}/{xEndCustomerId}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 10:26",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 10:48",
+                    "duration": 10
+                }
+            }
+        }
+    ]
+}

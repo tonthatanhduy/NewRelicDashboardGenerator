@@ -1,0 +1,90 @@
+{
+    "dashboardName": "Dispatch Service Performance Test Report - Dispatch - Get Endpoints",
+	"appName":"dispatch-service",
+    "pages": [
+        {
+            "pageName": "Get Dispatch",
+            "transactionName": "WebTransaction/MVC/Dispatch/GetDispatch/{dispatchId}/{xEndCustomerId}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 16:01",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 16:20",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Get Dispatch Batch",
+            "transactionName": "WebTransaction/MVC/Dispatch/GetDispatchBatch/{items}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 11:12",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 11:27",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Get Date Change Reasons Endpoint",
+            "transactionName": "WebTransaction/MVC/Dispatch/GetAllDateChangeReasons",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 19:21",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 19:41",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Get Cancellation Reasons Endpoint",
+            "transactionName": "WebTransaction/MVC/Dispatch/GetAllCancellationReasons",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 18:41",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 19:01",
+                    "duration": 10
+                }
+            }
+        },
+        {
+            "pageName": "Get Dispatches By CreatedDateUtc",
+            "transactionName": "WebTransaction/MVC/Dispatch/GetDispatchesByCreatedDateUtc/{getDispatchesByCreatedDateModel}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-08 09:04",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-08 10:54",
+                    "duration": 10
+                }
+            }
+        },
+		{
+            "pageName": "Get Modify Dispatches Endpoint",
+            "transactionName": "WebTransaction/MVC/Dispatch/GetModifyDispatches/{modifyTimeModel}",
+            "senarios": {
+                "rampup300": {
+                    "startTime": "2022-03-07 18:00",
+                    "duration": 10
+                },
+                "rampup0": {
+                    "startTime": "2022-03-07 18:21",
+                    "duration": 10
+                }
+            }
+        }
+    ]
+}

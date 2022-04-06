@@ -1,0 +1,29 @@
+{
+  "name": "dashboardName",
+  "description": null,
+  "permissions": "PUBLIC_READ_WRITE",
+  "pages": [
+    {
+      "name": "Performance Test Overview",
+      "description": null,
+      "widgets": [
+        {
+          "visualization": {
+            "id": "viz.markdown"
+          },
+          "layout": {
+            "column": 1,
+            "row": 1,
+            "height": 6,
+            "width": 12
+          },
+          "title": "",
+          "rawConfiguration": {
+            "text": "# This is Performance Test Result Dashboard\n## Service Name:\nDispatch Services\n\n## Business Requirment:\n1. **Throughput** - how many transactions as peak time does the system need to handle: **Total Requests Per Minute: 10,000**\n2. **Response times** - application loading, browser refresh times, etc. : **General Response Time < 200ms**\n3. **Reliability Requirements**: 200 concurrent users for 10 minutes (200 concurrent users means 200 threads)\n4. **Database Records Target**: Hit to target 10 million records in the database.\n\n## Test environment\n* DB type: **db.r5.large**\n* DB connection pool (min - max): **1 - 10**\n* Environment: Stage\n* Duration: **10 minutes**"
+          },
+          "linkedEntityGuids": null
+        }
+      ]
+    }
+  ]
+}
